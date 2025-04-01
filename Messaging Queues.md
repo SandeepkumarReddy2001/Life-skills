@@ -84,3 +84,14 @@ The schematic uses a modified level convertor from the EMS reference schematic c
 Many Buderus devices, such as the Buderus Logamax plus GB132 T boiler, use a bus system called EMS (Energy Management System) to communicate with other devices, such as the RC30 room controller.
 
 The EMS bus is a simple two-wire serial bus that uses voltage/current modulation to transmit data. With the proper hardware and software, you can transmit many parameters of your boiler into your home automation system.
+
+
+**A Message Queue is a linked list of messages stored within the kernel and identified by a message queue identifier. A new queue is created or an existing queue is opened by msgget(). New messages are added to the end of a queue by msgsnd(). Every message has a positive long integer type field, a non-negative length, and the actual data bytes (corresponding to the length), all of which are specified to msgsnd() when the message is added to a queue. Messages are fetched from a queue by msgrcv(). We don’t have to fetch the messages in a first-in, first-out order. Instead, we can fetch messages based on their type field.**
+
+## Reference:
+
+**Dynatrace** : [www.Dynatrace.com/news/blog](https://www.dynatrace.com/news/blog/what-is-a-message-queue/) <br>
+**IBM** :  [www.IBM.com/Messaging_Queues/blog](https://www.ibm.com/think/topics/message-queues#:~:text=Message%20queues%20store%20%E2%80%9Cmessages%E2%80%9D%20or%20packets%20of,until%20the%20consuming%20application%20can%20process%20them.&text=A%20message%20bus%2C%20which%20is%20a%20type,independently%20functional%20within%20a%20distributed%20system%20architecture.) <br>
+**geeksforgeeks** : [www.geeksforgeeks/Messaging_Queues/blog](https://www.geeksforgeeks.org/ipc-using-message-queues/) <br>
+**eginnovations** :[www.eginnovations/Messaging_Queues](https://www.eginnovations.com/glossary/message-queue) <br>
+**Hevo** : [www.Hevo.blogs/Messaging_Queues/news](https://hevodata.com/learn/popular-message-broker/#:~:text=Message%20Queue%20solutions%20include%20a%20buffer%20that,Kafka%2C%20RabbitMQ%2C%20Azure%20Queue%20Storage%2C%20and%20ActiveMQ.)
